@@ -4,7 +4,7 @@
 
 `brew install autoconf gdbm libxml2 libyaml perl python ruby vim ctags git libxslt openssl pkg-config readline sqlite`
 
-### 2. My Software List
+### 2. Usefull Softwares
 
 * Alfred
 * BetterZip
