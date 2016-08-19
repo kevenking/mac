@@ -18,7 +18,7 @@ ZSH_THEME="arrow"
 # DISABLE_AUTO_UPDATE="true"
 
 # Uncomment the following line to change how often to auto-update (in days).
-# export UPDATE_ZSH_DAYS=13
+export UPDATE_ZSH_DAYS=15
 
 # Uncomment the following line to disable colors in ls.
 # DISABLE_LS_COLORS="true"
@@ -40,7 +40,7 @@ ZSH_THEME="arrow"
 # Uncomment the following line if you want to change the command execution time
 # stamp shown in the history command output.
 # The optional three formats: "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
-# HIST_STAMPS="mm/dd/yyyy"
+HIST_STAMPS="yyyy-mm-dd"
 
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
@@ -49,7 +49,7 @@ ZSH_THEME="arrow"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git colored-man-pages colorize cp extract history sublime urltools vundle docker mvn celery django fabric pip python virtualenvwrapper brew themes osx)
+plugins=(git colored-man-pages colorize cp extract history sublime urltools vundle docker mvn celery django fabric pip python virtualenvwrapper brew themes osx z)
 
 # User configuration
 
@@ -82,5 +82,8 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 alias zshconfig="vim ~/.zshrc"
 alias ohmyzsh="mate ~/.oh-my-zsh"
+alias ll="ls -l -a"
 
 eval $(docker-machine env)
+
+. /Users/mac/.oh-my-zsh/plugins/z/z.sh

@@ -27,6 +27,7 @@
 * VirtualBox
 * Xcode
 * ITerm
+* CheatSheet
 
 ### 3. Vim Plugins
 

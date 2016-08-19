@@ -14,7 +14,8 @@ Plugin 'VundleVim/Vundle.vim'
 
 Plugin 'scrooloose/nerdtree'
 Plugin 'Valloric/YouCompleteMe' 
-Plugin 'bling/vim-airline'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'majutsushi/tagbar'
@@ -143,13 +144,14 @@ map <F4> :TagbarToggle<CR>
 autocmd VimEnter * nested :TagbarOpen
 
 " airline --------------------------
-let g:airline_powerline_fonts = 0
-"let g:airline_theme = 'bubblegum'
+let g:airline_powerline_fonts = 1
+let g:airline_theme = 'light'
 let g:airline#extensions#tagbar#enabled = 1
 
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#show_buffers = 1
 let g:airline#extensions#tabline#buffer_idx_mode = 1
+
 nmap <leader>1 <Plug>AirlineSelectTab1
 nmap <leader>2 <Plug>AirlineSelectTab2
 nmap <leader>3 <Plug>AirlineSelectTab3
